@@ -1,0 +1,16 @@
+{
+  "name": "check-in",
+  "version": "1.0.0",
+  "description": "每天自动签到脚本",
+  "author": "cafehaus",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["自动签到", "check-in", "cron"],
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "^3.0.2"
+  }
+}
