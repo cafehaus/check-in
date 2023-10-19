@@ -19,7 +19,7 @@
 ### 1、分析登录接口，拿到登录态参数
 输入账号密码登录后，发现登录接口 Response 里并没有数据返回，然后看 Headers 里的 Response Headers 里的 Set-Cookies 就是登陆成功服务端自动设置的登录态信息：
 
-<img src="./1.png" />
+<img src="http://node123.cn/assets/1.a3708eff.png" />
 
 这一步只需要带着账号密码参数去请求登录接口，然后再解析出 Set-Cookies 里我们需要的参数就行了，发起请求不需要用第三方库，17.5.0版本后 node 里也可以直接使用 fetch 发送请求了，可以直接在浏览器控制台 network 里选中接口右键 Copy - Copy as Node.js  fetch 复制，示例代码如下
 
